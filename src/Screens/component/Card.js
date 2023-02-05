@@ -5,7 +5,7 @@ const Card=(props)=>{
     console.log(props)
 
     return(
-        <div  className=" flexp-4 border w-2/6 h-3/5 rounded justify-center flex-row   pt-5 pb-6  pr-2">
+        <div  className=" flexp-4 border w-2/6 rounded justify-center flex-row   pt-5 pb-6  pr-2">
             <div className="pl-12">
             <img src={logo}  className=" h-12 w-12  "/>
             </div>
