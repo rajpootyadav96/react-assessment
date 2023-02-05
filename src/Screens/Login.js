@@ -49,21 +49,26 @@ const Login=()=> {
 
   // JSX code for login form
     return  (
-    <div className="align-center flex justify-center" >
-        <form className="p-25 border mt-20 p-20 pt-20 pb-40 " onSubmit={handleSubmit}>
-            <div className="pb-10">
-        <label>Username </label>
-          <input type="text" name="uname" required />
+    <div className="align-center flex justify-center bgLogo bg-cover bg-no-repeat h-screen" style={{resize:'contain'}} >
+
+        <form className="p-25  p-20 pt-20  h-screen" onSubmit={handleSubmit}>
+          <div className="border rounded pl-20 pr-20 pt-14 mt-10 pb-28">
+      <div className="pb-10 text-white font-bold text-xl">Login</div>
+
+            <div className="pb-10 ">
+        <div className="text-white">Username </div>
+          <input type="text" className="rounded mt-1 pl-2 pr-2" name="uname" required />
            {renderErrorMessage("uname")}
            </div>
 
            <div >
-          <label>Password </label>
-           <input type="password" name="pass" required />
+          <div className="text-white">Password </div>
+           <input className="ml-1 rounded mt-1 pl-2 pr-2 " type="password" name="pass" required />
            {renderErrorMessage("pass")}
          </div>
-         <div className="mt-5">
-         <input type="submit"  />
+         <div className="mt-5 ">
+         <input type="submit" className="rounded border" />
+         </div>
          </div>
         </form>
     </div>
